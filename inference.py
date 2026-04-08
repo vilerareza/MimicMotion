@@ -104,7 +104,7 @@ def main(args):
         )
         ################################### save results to output folder. ###########################################
         save_to_mp4(
-            _video_frames, os.path.join(args.output_dir, f"{os.path.basename(task.ref_video_path).split('.')[0]}.mp4"),
+            _video_frames, os.path.join(args.output_dir, f"{os.path.split(task.ref_video_path)[-1]}"),
             fps=task.fps,
         )
 
